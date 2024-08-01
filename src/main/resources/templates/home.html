@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Page for Seige testing</title>
+</head>
+<body>
+<h1>Welcome to the Sample Page</h1>
+
+<form action="#" th:action="@{/all-persons}" method="get">
+    <button type="submit">Get all persons</button>
+</form>
+
+<form action="#" th:action="@{/save-random-person}" method="post">
+    <button type="submit">Save random person</button>
+</form>
+
+<div th:if="${message}">
+    <p th:text="${message}"></p>
+</div>
+</body>
+</html>

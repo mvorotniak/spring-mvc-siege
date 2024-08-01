@@ -1,0 +1,3 @@
+http://localhost:8080/
+http://localhost:8080/save-random-person POST
+http://localhost:8080/all-persons
